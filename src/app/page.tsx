@@ -1,102 +1,139 @@
-import Image from "next/image";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="min-h-screen flex flex-col bg-background text-foreground">
+      {/* Header */}
+      <header className="flex justify-between items-start py-6 px-8 border-b border-muted-foreground/20">
+        <div className="font-extrabold text-lg tracking-widest">
+          ARTHUR
+          <span className="align-super text-xs ml-1">™</span>
         </div>
+        <div className="text-xs text-muted-foreground max-w-[400px] text-right pt-1">
+          Conceived and stylish commercial design is something that we devote to
+          most of our time and efforts.
+        </div>
+      </header>
+      {/* 4 columns grid */}
+      <main className="flex-1 grid grid-cols-1 md:grid-cols-4 gap-8 p-8 border-b border-muted-foreground/20 bg-background">
+        {/* About us */}
+        <section className="flex flex-col justify-between h-full">
+          <div>
+            <div className="font-semibold text-sm mb-2 border-b border-black/80 pb-1">
+              About us
+            </div>
+            <div className="text-xs text-muted-foreground mb-8">Back</div>
+            <div className="mb-8">
+              <span className="text-5xl font-extrabold leading-tight block mb-4">
+                Hello.
+              </span>
+              <p className="text-lg text-muted-foreground leading-snug">
+                Je suis développeur data spécialisé dans la création de solutions
+                data, dashboards, et automatisations pour la culture, le contenu
+                et le commerce.
+              </p>
+            </div>
+          </div>
+          <div className="text-xs border-t border-black/80 pt-2 font-medium mt-8">
+            38 Demonstration Street, 3rd floor, Tula 300034
+          </div>
+        </section>
+        {/* Services */}
+        <section className="flex flex-col justify-between h-full">
+          <div>
+            <div className="font-semibold text-sm mb-2 border-b border-black/80 pb-1">
+              Services
+            </div>
+            <div className="text-xs text-muted-foreground mb-8">Back</div>
+            <ul className="text-sm text-muted-foreground space-y-2 mt-4">
+              <li>Data Engineering</li>
+              <li>Data Science</li>
+              <li>Automatisation</li>
+              <li>Visualisation & Dashboard</li>
+              <li>Conseil & Formation</li>
+            </ul>
+          </div>
+          <div className="text-xs border-t border-black/80 pt-2 font-medium mt-8">
+            —
+          </div>
+        </section>
+        {/* Portfolio */}
+        <section className="flex flex-col justify-between h-full">
+          <div>
+            <div className="font-semibold text-sm mb-2 border-b border-black/80 pb-1">
+              Portfolio
+            </div>
+            <div className="text-xs text-muted-foreground mb-8">01</div>
+            <div className="mb-8">
+              <div className="font-bold mb-1 text-base">History</div>
+              <div className="text-xs text-muted-foreground mb-2">
+                Développement de solutions data et logiciels depuis 2014. Plus de{" "}
+                <span className="font-semibold">100 projets</span> réalisés pour
+                la culture, le contenu et le commerce.
+              </div>
+              <div className="text-xs text-muted-foreground">
+                Mon portfolio vous permettra de découvrir l’étendue de mes
+                réalisations, de la collecte à la valorisation de données.
+              </div>
+            </div>
+          </div>
+          <div className="text-xs border-t border-black/80 pt-2 font-medium mt-8">
+            Facebook
+          </div>
+        </section>
+        {/* Contact */}
+        <section className="flex flex-col justify-between h-full">
+          <div>
+            <div className="font-semibold text-sm mb-2 border-b border-black/80 pb-1">
+              Contact
+            </div>
+            <div className="text-xs text-muted-foreground mb-8">02</div>
+            <div className="mb-6">
+              <div className="font-bold mb-1 text-base">Mission</div>
+              <div className="text-xs text-muted-foreground mb-2">
+                Construire une relation de confiance durable et bénéfique autour
+                de la donnée.
+              </div>
+            </div>
+            <div className="mb-2">
+              <div className="font-bold mb-1 text-base">03 Projects</div>
+              <div className="text-xs text-muted-foreground">
+                <div className="flex justify-between border-b border-black/10 py-1">
+                  <span>Tagline</span>
+                  <span>5th place</span>
+                </div>
+                <div className="flex justify-between border-b border-black/10 py-1">
+                  <span>Golden Website</span>
+                  <span>3th place</span>
+                </div>
+                <div className="flex justify-between border-b border-black/10 py-1">
+                  <span>Awwwards</span>
+                  <span>SOTD</span>
+                </div>
+                <div className="flex justify-between border-b border-black/10 py-1">
+                  <span>Csswinner</span>
+                  <span>SOTM</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="text-xs border-t border-black/80 pt-2 font-medium mt-8">
+            Blog
+          </div>
+        </section>
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+      {/* Footer navigation */}
+      <footer className="flex justify-between items-center px-8 py-3 text-xs text-muted-foreground">
+        <div>© {new Date().getFullYear()} Data Portfolio</div>
+        <div className="flex gap-6">
+          <a href="#" className="hover:underline">
+            Facebook
+          </a>
+          <Link href="/blog" className="hover:underline">
+            Blog
+          </Link>
+        </div>
       </footer>
     </div>
   );
