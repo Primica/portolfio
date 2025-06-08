@@ -35,7 +35,7 @@ export default function Home() {
             </div>
           </div>
           <div className="text-xs border-t border-black/80 pt-2 font-medium mt-8">
-            38 Demonstration Street, 3rd floor, Tula 300034
+            Lyon
           </div>
         </section>
         {/* Services */}
