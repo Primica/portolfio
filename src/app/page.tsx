@@ -78,7 +78,9 @@ export default function Home() {
             </div>
           </div>
           <div className="text-xs border-t border-black/80 pt-2 font-medium mt-8">
-            Facebook
+            <Link href="/projects" className="hover:underline">
+              Projects
+            </Link>
           </div>
         </section>
         {/* Contact */}
@@ -118,21 +120,15 @@ export default function Home() {
             </div>
           </div>
           <div className="text-xs border-t border-black/80 pt-2 font-medium mt-8">
-            Blog
+            <Link href="/blog" className="hover:underline">
+              Blog
+            </Link>
           </div>
         </section>
       </main>
       {/* Footer navigation */}
       <footer className="flex justify-between items-center px-8 py-3 text-xs text-muted-foreground">
         <div>© {new Date().getFullYear()} Data Portfolio</div>
-        <div className="flex gap-6">
-          <a href="#" className="hover:underline">
-            Facebook
-          </a>
-          <Link href="/blog" className="hover:underline">
-            Blog
-          </Link>
-        </div>
       </footer>
     </div>
   );
