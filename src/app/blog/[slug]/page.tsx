@@ -52,23 +52,26 @@ export default async function BlogPostPage(props: { params: Promise<{ slug: stri
           remarkPlugins={[remarkGfm, remarkMath, remarkDirective]}
           rehypePlugins={[rehypeMathjax, rehypeHighlight, rehypeRaw]}
           components={{
-            h1: ({node, ...props}) => (
+            h1: ({...props}) => (
               <h1 className="text-4xl font-bold mt-8 mb-4" {...props} />
             ),
-            h2: ({node, ...props}) => (
+            h2: ({...props}) => (
               <h2 className="text-3xl font-bold mt-6 mb-3" {...props} />
             ),
-            h3: ({node, ...props}) => (
+            h3: ({...props}) => (
               <h3 className="text-2xl font-bold mt-4 mb-2" {...props} />
             ),
-            h4: ({node, ...props}) => (
-              <h4 className="text-xl font-bold mt-4 mb-2" {...props} />
+            h4: ({...props}) => (
+              <h4 className="text-xl font-bold mt-3 mb-2" {...props} />
             ),
-            h5: ({node, ...props}) => (
-              <h5 className="text-lg font-bold mt-4 mb-2" {...props} />
+            h5: ({...props}) => (
+              <h5 className="text-lg font-bold mt-2 mb-1" {...props} />
             ),
-            h6: ({node, ...props}) => (
-              <h6 className="text-base font-bold mt-4 mb-2" {...props} />
+            h6: ({...props}) => (
+              <h6 className="text-base font-bold mt-2 mb-1" {...props} />
+            ),
+            p: ({...props}) => (
+              <p className="mb-4" {...props} />
             ),
             ul: ({children}) => (
               <ul className="list-disc list-inside my-4 space-y-1">{children}</ul>
@@ -79,10 +82,7 @@ export default async function BlogPostPage(props: { params: Promise<{ slug: stri
             li: ({children}) => (
               <li className="my-1 ml-4">{children}</li>
             ),
-            p: ({children}) => (
-              <p className="my-4 leading-relaxed">{children}</p>
-            ),
-            div: ({node, className, children, ...props}) => {
+            div: ({className, children, ...props}) => {
               if (className?.startsWith('callout-')) {
                 const type = className.replace('callout-', '');
                 return <Callout type={type}>{children}</Callout>;
