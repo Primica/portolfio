@@ -12,12 +12,12 @@ import {
 
 const projects = [
   {
-    name: "Data Pipeline ETL",
-    description: "Pipeline de traitement de données en temps réel avec Apache Kafka",
-    stack: "Python, Apache Kafka, Docker",
+    name: "Rock Paper Machine",
+    description: "Modèle de machine learning pour le jeu de pierre, papier, ciseaux",
+    stack: "Python",
     status: "Production",
-    year: "2024",
-    repo: "https://github.com/username/data-pipeline",
+    year: "2025",
+    repo: "https://github.com/primica/Rock-paper-machine",
   },
   {
     name: "Dashboard Analytics",
