@@ -78,8 +78,8 @@ export default function Home() {
             </div>
           </div>
           <div className="text-xs border-t border-black/80 pt-2 font-medium mt-8">
-            <Link href="/projects" className="hover:underline">
-              Projects
+            <Link href="/blog" className="hover:underline">
+              Blog
             </Link>
           </div>
         </section>
@@ -120,8 +120,8 @@ export default function Home() {
             </div>
           </div>
           <div className="text-xs border-t border-black/80 pt-2 font-medium mt-8">
-            <Link href="/blog" className="hover:underline">
-              Blog
+            <Link href="/projects" className="hover:underline">
+              Projects
             </Link>
           </div>
         </section>
