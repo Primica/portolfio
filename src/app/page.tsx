@@ -101,8 +101,8 @@ export default function Home() {
               <div className="font-bold mb-1 text-base">03 Projects</div>
               <div className="text-xs text-muted-foreground">
                 <div className="flex justify-between border-b border-black/10 py-1">
-                  <span>Tagline</span>
-                  <span>5th place</span>
+                  <span>Rock Paper Machine</span>
+                  <span>2025</span>
                 </div>
                 <div className="flex justify-between border-b border-black/10 py-1">
                   <span>Golden Website</span>
