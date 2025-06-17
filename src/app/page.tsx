@@ -22,7 +22,7 @@ export default function Home() {
             <div className="font-semibold text-sm mb-2 border-b border-black/80 pb-1">
               About us
             </div>
-            <div className="text-xs text-muted-foreground mb-8">Back</div>
+            <div className="text-xs text-muted-foreground mb-8">01</div>
             <div className="mb-8">
               <span className="text-5xl font-extrabold leading-tight block mb-4">
                 Hello.
@@ -44,7 +44,7 @@ export default function Home() {
             <div className="font-semibold text-sm mb-2 border-b border-black/80 pb-1">
               Services
             </div>
-            <div className="text-xs text-muted-foreground mb-8">Back</div>
+            <div className="text-xs text-muted-foreground mb-8">02</div>
             <ul className="text-sm text-muted-foreground space-y-2 mt-4">
               <li>Data Engineering</li>
               <li>Data Science</li>
@@ -63,7 +63,7 @@ export default function Home() {
             <div className="font-semibold text-sm mb-2 border-b border-black/80 pb-1">
               Portfolio
             </div>
-            <div className="text-xs text-muted-foreground mb-8">01</div>
+            <div className="text-xs text-muted-foreground mb-8">03</div>
             <div className="mb-8">
               <div className="font-bold mb-1 text-base">History</div>
               <div className="text-xs text-muted-foreground mb-2">
@@ -89,7 +89,7 @@ export default function Home() {
             <div className="font-semibold text-sm mb-2 border-b border-black/80 pb-1">
               Contact
             </div>
-            <div className="text-xs text-muted-foreground mb-8">02</div>
+            <div className="text-xs text-muted-foreground mb-8">04</div>
             <div className="mb-6">
               <div className="font-bold mb-1 text-base">Mission</div>
               <div className="text-xs text-muted-foreground mb-2">
