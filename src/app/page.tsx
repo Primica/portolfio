@@ -98,7 +98,7 @@ export default function Home() {
               </div>
             </div>
             <div className="mb-2">
-              <div className="font-bold mb-1 text-base">03 Projects</div>
+              <div className="font-bold mb-1 text-base">Projects</div>
               <div className="text-xs text-muted-foreground">
                 <div className="flex justify-between border-b border-black/10 py-1">
                   <span>Rock Paper Machine</span>
