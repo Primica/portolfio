@@ -20,12 +20,12 @@ const projects = [
     repo: "https://github.com/primica/Rock-paper-machine",
   },
   {
-    name: "Dashboard Analytics",
-    description: "Dashboard interactif pour l'analyse de données marketing",
-    stack: "React, D3.js, Python FastAPI",
+    name: "Bootloader (base) en assembly",
+    description: "Bootloader en assembly qui affiche un message de bienvenue",
+    stack: "Assembly",
     status: "Production",
     year: "2024",
-    repo: "https://github.com/username/dashboard-analytics",
+    repo: "https://github.com/username/bootloader-assembly",
   },
   {
     name: "ML Recommendation Engine",
