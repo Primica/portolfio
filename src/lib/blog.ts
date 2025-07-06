@@ -5,8 +5,23 @@ import matter from "gray-matter";
 const postsDirectory = path.join(process.cwd(), "posts");
 
 export function getAllPosts() {
+  // Vérifier si le dossier posts existe
+  if (!fs.existsSync(postsDirectory)) {
+    return [];
+  }
+  
   const fileNames = fs.readdirSync(postsDirectory);
-  return fileNames.map((fileName) => {
+  
+  // Filtrer seulement les fichiers .md et .mdx
+  const markdownFiles = fileNames.filter(fileName => 
+    fileName.endsWith('.md') || fileName.endsWith('.mdx')
+  );
+  
+  if (markdownFiles.length === 0) {
+    return [];
+  }
+  
+  return markdownFiles.map((fileName) => {
     const slug = fileName.replace(/\.mdx?$/, "");
     const fullPath = path.join(postsDirectory, fileName);
     const fileContents = fs.readFileSync(fullPath, "utf8");
