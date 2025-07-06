@@ -17,7 +17,7 @@ const projects = [
     stack: "Python",
     status: "Production",
     year: "2025",
-    repo: "https://github.com/primica/Rock-paper-machine",
+    repo: "https://github.com/Primica/Rock-paper-machine",
   },
   {
     name: "Bootloader (base) en assembly",
@@ -25,16 +25,24 @@ const projects = [
     stack: "Assembly",
     status: "Production",
     year: "2024",
-    repo: "https://github.com/username/bootloader-assembly",
+    repo: "https://github.com/Primica/bootloader",
   },
   {
-    name: "ML Recommendation Engine",
-    description: "Système de recommandation basé sur le machine learning",
-    stack: "Python, Scikit-learn, FastAPI",
-    status: "En développement",
+    name: "Plugin RPC Discord pour Obsidian.md",
+    description: "Plugin RPC Discord pour Obsidian.md en typescript",
+    stack: "Typescript, Obsidian API",
+    status: "Production",
     year: "2025",
-    repo: "https://github.com/username/ml-recommendations",
+    repo: "https://github.com/Primica/Yet-another-rpc-plugin-main",
   },
+  {
+    name: "MyAlloc",
+    description: "Re implementation de l'allocation de mémoire en C",
+    stack: "C",
+    status: "Production",
+    year: "2024",
+    repo: "https://github.com/Primica/MyAlloc",
+  }
 ];
 
 export default function ProjectsPage() {

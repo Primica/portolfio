@@ -108,12 +108,12 @@ export default function Home() {
                   <span>2024</span>
                 </div>
                 <div className="flex justify-between border-b border-black/10 py-1">
-                  <span>Awwwards</span>
-                  <span>SOTD</span>
+                  <span>Plugin RPC Discord pour Obsidian.md</span>
+                  <span>2025</span>
                 </div>
                 <div className="flex justify-between border-b border-black/10 py-1">
-                  <span>Csswinner</span>
-                  <span>SOTM</span>
+                  <span>MyAlloc</span>
+                  <span>2024</span>
                 </div>
               </div>
             </div>
