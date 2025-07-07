@@ -17,7 +17,6 @@ const projects = [
     stack: "Python",
     status: "Production",
     year: "2025",
-    repo: "https://github.com/Primica/Rock-paper-machine",
   },
   {
     name: "Bootloader (base) en assembly",
@@ -25,7 +24,6 @@ const projects = [
     stack: "Assembly",
     status: "Production",
     year: "2024",
-    repo: "https://github.com/Primica/bootloader",
   },
   {
     name: "Plugin RPC Discord pour Obsidian.md",
@@ -33,7 +31,6 @@ const projects = [
     stack: "Typescript, Obsidian API",
     status: "Production",
     year: "2025",
-    repo: "https://github.com/Primica/Yet-another-rpc-plugin-main",
   },
   {
     name: "MyAlloc",
@@ -41,7 +38,6 @@ const projects = [
     stack: "C",
     status: "Production",
     year: "2024",
-    repo: "https://github.com/Primica/MyAlloc",
   }
 ];
 
@@ -81,7 +77,6 @@ export default function ProjectsPage() {
                   <TableHead>Stack Technique</TableHead>
                   <TableHead>Status</TableHead>
                   <TableHead>Année</TableHead>
-                  <TableHead>Repository</TableHead>
                 </TableRow>
               </TableHeader>
               <TableBody>
@@ -92,13 +87,6 @@ export default function ProjectsPage() {
                     <TableCell className="font-mono text-xs">{project.stack}</TableCell>
                     <TableCell>{project.status}</TableCell>
                     <TableCell>{project.year}</TableCell>
-                    <TableCell>
-                      <Button variant="outline" size="sm" asChild>
-                        <a href={project.repo} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
-                          Voir le code
-                        </a>
-                      </Button>
-                    </TableCell>
                   </TableRow>
                 ))}
               </TableBody>
