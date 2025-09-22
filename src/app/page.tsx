@@ -10,7 +10,7 @@ export default function Home() {
           <span className="align-super text-xs ml-1">™</span>
         </div>
         <div className="text-xs text-muted-foreground max-w-[400px] text-right pt-1">
-          Ma mission est de construire pour vous les outils data-driven qui vous permettront de vous démarquer.
+          Passioné de développement et data engineering
         </div>
       </header>
       {/* 4 columns grid */}
@@ -27,9 +27,9 @@ export default function Home() {
                 Hello.
               </span>
               <p className="text-lg text-muted-foreground leading-snug">
-                Je suis développeur data spécialisé dans la création de solutions
-                data, dashboards, et automatisations pour la culture, le contenu
-                et le commerce. Ainsi que la création de bot discord.
+                Je suis développeur junior, ayant fait une année d'IUT en Science des Données.
+                Et ayant eu la chance de faire la piscine de 42 Lyon. 
+                Je me lance dans de nombreux projets afin d'aiguiser mes compétences.
               </p>
             </div>
           </div>
@@ -45,10 +45,10 @@ export default function Home() {
             </div>
             <div className="text-xs text-muted-foreground mb-8">02</div>
             <ul className="text-sm text-muted-foreground space-y-2 mt-4">
-              <li>Data Science</li>
+              <li>Mise en place de base de données</li>
               <li>Automatisation</li>
               <li>Visualisation</li>
-              <li>Conseil</li>
+              <li>Web</li>
               <li>Bot Discord</li>
             </ul>
           </div>
@@ -66,7 +66,7 @@ export default function Home() {
             <div className="mb-8">
               <div className="font-bold mb-1 text-base">History</div>
               <div className="text-xs text-muted-foreground mb-2">
-                Développement de solutions data et logiciels depuis 2023. Plus de{" "}
+                Développement de solutions data depuis 2024/2025. Plus de{" "}
                 <span className="font-semibold">15 projets</span> réalisés pour
                 des particuliers et petits studios de développement indépendants.
               </div>
@@ -127,7 +127,7 @@ export default function Home() {
       </main>
       {/* Footer navigation */}
       <footer className="flex justify-between items-center px-8 py-3 text-xs text-muted-foreground">
-        <div>© {new Date().getFullYear()} Data Portfolio</div>
+        <div>© {new Date().getFullYear()} Arthur's Portfolio</div>
       </footer>
     </div>
   );

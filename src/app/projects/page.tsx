@@ -19,9 +19,9 @@ const projects = [
     year: "2025",
   },
   {
-    name: "Bootloader (base) en assembly",
-    description: "Bootloader en assembly qui affiche un message de bienvenue",
-    stack: "Assembly",
+    name: "Graphqlite",
+    description: "Prototype de base de données orientée graphe en c#",
+    stack: "C#",
     status: "Production",
     year: "2024",
   },
