@@ -27,9 +27,9 @@ export default function Home() {
                 Hello.
               </span>
               <p className="text-lg text-muted-foreground leading-snug">
-                Je suis développeur junior, ayant fait une année d'IUT en Science des Données.
+                Je suis développeur junior, ayant fait une année d&apos;IUT en Science des Données.
                 Et ayant eu la chance de faire la piscine de 42 Lyon. 
-                Je me lance dans de nombreux projets afin d'aiguiser mes compétences.
+                Je me lance dans de nombreux projets afin d&apos;aiguiser mes compétences.
               </p>
             </div>
           </div>
@@ -127,7 +127,7 @@ export default function Home() {
       </main>
       {/* Footer navigation */}
       <footer className="flex justify-between items-center px-8 py-3 text-xs text-muted-foreground">
-        <div>© {new Date().getFullYear()} Arthur's Portfolio</div>
+        <div>© {new Date().getFullYear()} Arthur&apos;s Portfolio</div>
       </footer>
     </div>
   );
